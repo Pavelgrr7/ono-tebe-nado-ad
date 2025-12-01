@@ -9,28 +9,28 @@
 }
 
 .aligned-text {
-    display: block;
+    display: flex;
 }
 
 .aligned-text_center {
-    text-align: center;
+    justify-content: center;
 }
 
 .aligned-text_right {
-    text-align: right;
+    justify-content: flex-end;
 }
 
 .card-link {
+    text-decoration: none;
     display: block;
     height: 100%;
-    text-decoration: none;
 }
 
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    align-items: center;
-    margin-top: 92px;
+    align-items: start;
+    margin-top: 100px; 
     margin-right: 24px;
     margin-left: 24px;
     padding-bottom: 96px;
@@ -39,13 +39,14 @@
 .header__menu {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .header__links-list {
     display: flex;
-    align-items: center;
-    gap: 32px;
+    align-items: start;
+    gap: 10px;
+    margin-top: 0; 
     font-size: 18px;
     line-height: 22px;
     list-style: circle;
@@ -91,6 +92,8 @@
 
 .cover {
     position: relative;
+    z-index: 1;
+    margin-top: 86px;
     margin-bottom: 180px;
     min-height: 757px;
     padding-top: 165px;
@@ -105,7 +108,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 1;
 }
 
 .cover__title {
@@ -114,11 +116,12 @@
     color: white;
     font-size: 100px;
     font-weight: 700;
-    line-height: 115%;
+    line-height: 123%;
     letter-spacing: 30px;
     text-transform: uppercase;
     
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .cover__description {
@@ -158,7 +161,6 @@
     display: flex;
     flex-direction: column;
     padding: 0 24px;
-    margin-bottom: 180px;
 }
 
 .lots__heading {
@@ -238,7 +240,8 @@
     justify-content: space-between;
     align-items: start;
     padding: 0 24px;
-    margin-bottom: 180px;
+    margin-top: 182px;
+    margin-bottom: 176px;
 }
 
 .about__column:first-child {
@@ -253,6 +256,8 @@
     height: 240px;
     border-radius: 50%;
     background-color: black;
+    margin-left: 47px;
+    margin-right: 71px;
 }
 
 .about__logo-image {
@@ -288,7 +293,7 @@
     align-items: flex-start;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 88px;
+    margin-bottom: 86px;
 }
 
 .address__footer {
@@ -303,6 +308,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     gap: 14px;
 }
 
