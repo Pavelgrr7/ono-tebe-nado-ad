@@ -90,7 +90,8 @@
 
 .cover {
     position: relative;
-    margin-bottom: 180px;
+    margin-bottom: 175px;
+    
     min-height: 757px;
     padding-top: 165px;
     padding-right: 50px;
@@ -113,7 +114,7 @@
     color: white;
     font-size: 100px;
     font-weight: 700;
-    line-height: 123%;
+    line-height: 115%;
     letter-spacing: 30px;
     text-transform: uppercase;
     
@@ -180,7 +181,6 @@
 }
 
 .lots__card-list-item {
-    /* Ширина регулируется гридом, height растягивается */
     min-height: 596px;
 }
 
@@ -242,11 +242,12 @@
     justify-content: center;
     align-items: start;
     padding: 0 24px;
-    margin-bottom: 180px;
+    margin-top: 182px;
+    margin-bottom: 176px;
 }
 
 .about__column:first-child {
-    display: block;
+    display: block; 
 }
 
 .about__logo {
@@ -270,7 +271,6 @@
 }
 
 .about__title {
-    /* Отступ сверху */
     margin-top: 100px;
     margin-bottom: 100px;
     font-weight: 700;
